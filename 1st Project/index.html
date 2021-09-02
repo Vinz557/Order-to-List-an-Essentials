@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main</title>
+    <style type="text/css">
+        
+        .p{
+            display: flex;
+        }
+        .c1{
+            border-right: 2px #264d73;
+            float: left;
+            width: 35%;
+            background-color: #264d73;
+            color: white;
+            padding-bottom: 50px;
+           
+        }
+        .c2{
+            float: right;
+            width: 60%;
+        }
+        .d1{
+            border: 2px solid #264d73;width: 70%;text-align: center;
+
+        }
+        .cs2{
+        	background-color: #264d73;
+        	color: white;
+        	border: 2px solid black;width: 90%;text-align: center;
+        }
+
+        
+
+    </style>
+
+</head>
+
+<center>
+    <div class="d1">
+
+        <section class="p">
+            <section class="c1">
+                <div >
+                    <img src="1.jpg" width="327" height="190" style="margin-top:0px; margin-bottom: 0px"  style="border-radius: 60px" style="display: flex;">
+                    
+                </div>
+                <hr><hr>
+                <h4>More Orders , More Freebies!!</h4>
+                <hr><hr>
+                <img src="2.jpg" width="327" height="300" style="margin-top:10px; margin-bottom: -10px"  style="border-radius: 60px" style="display: flex;">
+                
+            </section>
+
+            <section class="c2">
+                <h1 style="padding-top: 10%;text-align: left;margin-left: 15px;margin-top: 50px;font-size: 45px;color: #204060" >Essentials Orders List</h1>
+                <hr style="transition-delay: 30px;display: flex;">
+
+                <section style="text-align: left;margin-left: 50px;">
+                	<h3 style="color: #204060; font-size: 30px; margin-top: -5px" > TYPE IT OUT</h3>
+                	<hr>
+
+                	<form action="insert.php" method="POST">
+                		<div style="text-align: left; margin-left: 0px" class="cs2">
+	                	<ul>
+	                		
+		    				Owners Name<br> <input type="name" name="ownersName"> <br><br>
+
+	    					Products Name eg.(chicken,meat,etc)<br> <input type="name" name="productName"placeholder = "All item you bought"> <br><br>
+
+		        			Quantity<br> <input type="name" name="quantity"placeholder = "Number of products" ><br><br>
+
+	                		Total Price <br><input type="name" name="price"><br><br>
+
+		    			
+	                	</ul>
+
+
+                	</div>
+                	</form>
+					
+
+                   	
+                </section>
+                <div style="text-align: right;  "><button style="text-align: right; background-color: #264d73 " >Save</button></div>
+
+                
+            </section>
+        </section>
+            
+        
+        
+
+    </div>
+</center>
+
+</html>
