@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +7,8 @@
     <style type="text/css">
         
         .p{
-            display: flex;
+            display: flex
+
         }
         .c1{
             border-right: 2px #264d73;
@@ -23,7 +25,7 @@
         }
         .d1{
             border: 2px solid #264d73;width: 70%;text-align: center;
-
+            margin-top: 50px;
         }
         .cs2{
         	background-color: #264d73;
@@ -32,67 +34,102 @@
         }
 
         
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+          
+          background-color: black;
+        }
+
+        .topnav a {
+          float: center;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .topnav a:hover {
+          background-color: black;
+          color: white;
+        }
+
+        
+            
+        
 
     </style>
 
 </head>
 
-<center>
-    <div class="d1">
+<body>
 
-        <section class="p">
-            <section class="c1">
-                <div >
-                    <img src="1.jpg" width="327" height="190" style="margin-top:0px; margin-bottom: 0px"  style="border-radius: 60px" style="display: flex;">
-                    
+    <form action="insert.php" method="POST">
+        <center>
+
+            <div class="d1">
+                <div class="topnav" style="margin-bottom: 0px; background-color:#204060">
+                  
+                  <a class="active" href="index.php">Home</a>
+                  <a href="du.php">Update and Delete</a>
+                  <a href="https://www.facebook.com/JLBADelivery">Contact</a>
+                  
                 </div>
-                <hr><hr>
-                <h4>More Orders , More Freebies!!</h4>
-                <hr><hr>
-                <img src="2.jpg" width="327" height="300" style="margin-top:10px; margin-bottom: -10px"  style="border-radius: 60px" style="display: flex;">
-                
-            </section>
 
-            <section class="c2">
-                <h1 style="padding-top: 10%;text-align: left;margin-left: 15px;margin-top: 50px;font-size: 45px;color: #204060" >Essentials Orders List</h1>
-                <hr style="transition-delay: 30px;display: flex;">
+                <section class="p">
+                    <section class="c1">
+                        <div >
+                            <img src="1.jpg" width="327" height="190" style="margin-top:5px; margin-bottom: 0px"  style="border-radius: 60px" style="display: flex;">
+                            
+                                </div>
+                                <hr><hr>
+                                <h4>More Orders , More Freebies!!</h4>
+                                <hr><hr>
+                                <img src="2.jpg" width="327" height="300" style="margin-top:10px; margin-bottom: -10px"  style="border-radius: 60px" style="display: flex;">
+                                
+                            </section>
 
-                <section style="text-align: left;margin-left: 50px;">
-                	<h3 style="color: #204060; font-size: 30px; margin-top: -5px" > TYPE IT OUT</h3>
-                	<hr>
+                            <section class="c2">
 
-                	<form action="insert.php" method="POST">
-                		<div style="text-align: left; margin-left: 0px" class="cs2">
-	                	<ul>
-	                		
-		    				Owners Name<br> <input type="name" name="ownersName"> <br><br>
+                            <h1 style="padding-top: 10%;text-align: left;margin-left: 15px;margin-top: 50px;font-size: 45px;color: #204060" >Essentials Orders List</h1>
+                            <hr style="transition-delay: 30px;display: flex;">
 
-	    					Products Name eg.(chicken,meat,etc)<br> <input type="name" name="productName"placeholder = "All item you bought"> <br><br>
+                        <section style="text-align: left;margin-left: 50px;">
+                            <h3 style="color: #204060; font-size: 25px; margin-top: -5px" > TYPE IT OUT AND CREATE ORDERS</h3>
+                            <hr>
 
-		        			Quantity<br> <input type="name" name="quantity"placeholder = "Number of products" ><br><br>
+                            
+                                <div style="text-align: left; margin-left: 0px" class="cs2">
+                                    <ul>
+                                        
+                                        Owners Name<br> <input type="name" name="ownersName"> <br><br>
 
-	                		Total Price <br><input type="name" name="price"><br><br>
+                                        Products Name eg.(chicken,meat,etc)<br> <input type="name" name="productName"placeholder = "All item you bought"> <br><br>
 
-		    			
-	                	</ul>
+                                        Quantity<br> <input type="name" name="quantity"placeholder = "Number of products" ><br><br>
 
+                                        Total Price <br><input type="name" name="price"><br><br>
+                                    </ul>
+                                        <button type="submit" name="submit" >Save</button>
+                                </div>
+                          
+                        </section>
+                        
 
-                	</div>
-                	</form>
-					
-
-                   	
+                        
+                    </section>
                 </section>
-                <div style="text-align: right;  "><button style="text-align: right; background-color: #264d73 " >Save</button></div>
-
+                    
                 
-            </section>
-        </section>
-            
-        
-        
+                
 
-    </div>
-</center>
+            </div>
+            
+        </center>
+    </form> 
+</body>
+   
 
 </html>
