@@ -3,7 +3,9 @@
        $conn  = mysqli_connect('localhost', 'root', '', 'orderlist');
        $query = "select * from orders ORDER BY id DESC";
        $result = mysqli_query($conn,$query);
-
+       $queryDel = "select * from orders";
+       $dataDel = mysqli_query($conn,$queryDel);
+       $resultDel = mysqli_fetch_assoc($dataDel);
 
 if(isset($_POST['update']))
 {
@@ -136,7 +138,9 @@ if(isset($_POST['update']))
                                <table align="center" border="1px" style="width: 500px; line-height: 30px;background-color: #264d73;color: white">
                                    <tr>
                                        <th colspan="5" align="center">Costumer's Orders</th>
-
+                                       <form action="delete.php" method="POST">
+                                       <th  align="center">Put id number to delete<input type="text" name="idnumber" size="4px"></th>
+                                       
                                    </tr>
 
                                    <t>
@@ -145,20 +149,25 @@ if(isset($_POST['update']))
                                         <th align="center">Products</th>
                                         <th align="center">Quantity</th>
                                         <th align="center"> Total Price</th>
+                                        
+                                        <th align="center"><button type="submit" name="update" value="update" value="refresh Page " onclick="refresh" >Click me to delete</button></th>
                                    </t>
-
+                                        </form>
                                    <?php
                                    
 
                                         while($rows=mysqli_fetch_assoc($result))
                                         {
                                     ?>   
+
+                                           
                                             <tr>
                                                 <td align="center"><?php echo $rows['id'] ?></td>
                                                 <td align="center"><?php echo $rows['name'] ?></td>
                                                 <td align="center"><?php echo $rows['products'] ?></td>
                                                 <td align="center"><?php echo $rows['quantity'] ?></td>
                                                 <td align="center"><?php echo $rows['total'] ?></td>
+                                                
                                             </tr>     
                                      <?php       
                                         }
