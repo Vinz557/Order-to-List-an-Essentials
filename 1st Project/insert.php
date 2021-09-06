@@ -23,15 +23,18 @@ if (isset($_POST['submit']))
 
 		if($run)
 		{
+			header('location: index.php');
 			echo "Form submitted successfully";
 		}else
 		{
+			header('location: index.php');
 			echo "Form not submitted successfully";
 		}
 
 
 	}else
 	{
+		header('location: index.php');
 		echo "all fields required";
 	}
 
